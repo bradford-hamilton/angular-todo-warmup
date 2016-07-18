@@ -23,6 +23,4 @@ app.get('*', function(request, response) {
   response.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(1337, function() {
-  console.log('App listening on port 1337');
-});
+app.listen(process.env.PORT || 1337);
